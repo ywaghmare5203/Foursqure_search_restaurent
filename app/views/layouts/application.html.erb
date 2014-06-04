@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foursquare search data</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	<!-- CSS and JS for our code -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  
+
+
+</head>
+<body>
+ <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
+<%= yield %>
+
+</body>
+</html>

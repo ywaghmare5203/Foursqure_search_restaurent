@@ -1,0 +1,27 @@
+  <div class="select_location">
+<script src="/js/map.js"></script>
+  </div>
+<h1 >Four Square Search Restaurants</h1>
+<form>
+	<fieldset class="gllpLatlonPicker">
+		<%#*<input type="text" class="gllpSearchField">%>
+		<%#*<input type="button" class="gllpSearchButton" value="search">%>
+		<br/><br/>
+		<div class="gllpMap">Google Maps</div>
+		<br/>
+		lat/lon:
+			<input type="text" class="gllpLatitude" value="" id="gllpLatitude"/>
+			/
+			<input type="text" class="gllpLongitude" value="" id="gllpLongitude"/>
+		zoom: <input type="text" class="gllpZoom" value="3"/>
+		<input type="button" class="gllpUpdateButton" value="update map">
+		<br/>
+	</fieldset>
+</form>
+
+ <div id="resultmap">
+   <table id="resultdata" cellpadding="3" cellspacing="0"><tr><th>Hotels</th><th>Address</th><th>City</th><th>Country</th></tr></table>
+
+ </div>
+
+
